@@ -1,6 +1,5 @@
-# I
 ## This function makeCacheMatrix, creates a special matrix object 
-#that can cache its inverse.
+# that can cache its inverse.
 # makeCacheMatrix creates a special "matrix", 
 # which is really a list containing a function to
 # set the value of the vector
@@ -17,12 +16,10 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() x
   setinvmat <- function(solve) z <<- solve
   getinvmat <- function() z
-  list(set=set
-       , get=get
-       , setinvmat=setinvmat
-       , getinmat=getinmat)
+  list(set=set, get=get
+      , setinvmat=setinvmat, getinmat=getinmat)
 }
-# II
+
 # The following function returns the inverse of the special "matrix". 
 # It first checks if the inverse has already been computed. 
 # If so, it gets the inverse as result and skips the computation.
