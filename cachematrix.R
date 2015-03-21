@@ -1,3 +1,4 @@
+# I
 ## This function makeCacheMatrix, creates a special matrix object 
 #that can cache its inverse.
 # makeCacheMatrix creates a special "matrix", 
@@ -21,6 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
        , setinvmat=setinvmat
        , getinmat=getinmat)
 }
+# II
 # The following function returns the inverse of the special "matrix". 
 # It first checks if the inverse has already been computed. 
 # If so, it gets the inverse as result and skips the computation.
